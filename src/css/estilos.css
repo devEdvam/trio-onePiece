@@ -1,0 +1,147 @@
+body {
+	background-color: black;
+	color: #fff;
+    overflow-y: hidden;
+    
+    
+}
+
+
+.home {
+	display: flex;
+	position: relative;
+	min-height: calc(100vh - 80px);
+}
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+   
+}
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+   
+    
+    
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+    
+   
+}
+
+.conteudo .nome-personagem {
+    color: white;
+    font-size: 48px;
+    font-family: "ChaletComprime";
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50px;
+    background: linear-gradient(-350deg, #000000, rgba(0, 0, 0, 0.2)65%) transparent;
+  
+}
+
+.conteudo .descricao {
+    color: white;
+    font-family: "ChaletComprime";
+    font-size: 30px;
+    line-height: 34px;
+    position: relative;
+    top: 30px;
+    background: linear-gradient(-150deg, #000000, rgba(0, 0, 0, 0.5)65%) transparent;
+    
+   
+  
+    
+}
+
+.conteudo .logo {
+    background-image: url("../img/one-piece-logo.png");
+    background-size: cover;
+    height: 105px;
+    width: 230px;
+    margin-bottom: 35px;
+    position: relative;
+    top: 110px;
+   
+    
+   
+    
+}
+
+.botoes {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    gap: 30px;
+    list-style-type: none;
+}
+
+.botoes .botao {
+     border: none;
+     background:#000000;
+     cursor: pointer;
+     border-radius: 50%;
+     
+}
+
+.botoes .botao img {
+   border-radius: 50%;
+   
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px gold;
+    
+    
+}
+
+.vs .luta{
+    align-items: center;
+    width: 100%;
+   
+    padding: 10px;
+    display: flex;
+     justify-content: center;
+
+}
+
+
+
+
+
